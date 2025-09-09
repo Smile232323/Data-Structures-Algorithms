@@ -1,55 +1,88 @@
-# Prerequisites
-*.d
+# Operating System Files
+.DS_Store # macOS
+Thumbs.db # Windows
 
-# Object files
+# Build Artifacts (C/C++)
 *.o
-*.ko
 *.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
 *.exe
 *.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+*.bin
+*.dll
+*.lib
+*.so
+*.dylib
+*.a
+*.mod
+*.sym
+*.d
+*.ko
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Build Directories (C/C++)
+build/
+bin/
+debug/
+release/
+obj/
+tmp/
+*.vcproj.user
+*.vcxproj.user
+*.vcxproj.filters
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# CMake Specific (C/C++)
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+.project
+.cproject
+.settings/
 
-# debug information files
-*.dwo
+# Java Specific
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+hs_err_pid* # JVM crash logs
+
+# Java Build Directories/Files
+target/
+build/
+.gradle/
+.idea/ # IntelliJ IDEA project files
+*.iml # IntelliJ IDEA module files
+*.ipr # IntelliJ IDEA project files
+*.iws # IntelliJ IDEA workspace files
+.classpath
+.project
+.settings/
+
+# Python Specific
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+.env/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# IDE and Editor Specific Files
+.vscode/ # Visual Studio Code
+.idea/ # IntelliJ IDEA, PyCharm, WebStorm etc.
+*.swp # Vim swap files
+*~ # Backup files
+*.sublime-project # Sublime Text
+*.sublime-workspace # Sublime Text
+*.code-workspace # VS Code workspace
